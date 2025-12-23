@@ -1,6 +1,6 @@
 # Network Log Analyzer (SOC Tool)
 
-This Python script is a lightweight **Real-Time Network Log Analyzer** designed for SOC (Security Operations Center) analysts. It mimics the behavior of a SIEM by monitoring web server access logs (Apache/Nginx) and detecting potential security threats in real-time.
+This Python script is a lightweight ** Network Log Analyzer** designed for SOC (Security Operations Center) analysts. It mimics the behavior of a SIEM by monitoring web server access logs (Apache/Nginx) and detecting potential security threats in real-time.
 
 ## Features
 
@@ -24,7 +24,7 @@ The script parses **Common Log Format (CLF)** logs and applies signature-based d
 
 2.  **Run the Analyzer**:
     ```bash
-    python3 logex.py
+    python3 log_analyzer.py
     ```
 
 3.  **Simulate Attacks (Optional)**:
@@ -35,7 +35,7 @@ The script parses **Common Log Format (CLF)** logs and applies signature-based d
 
 ## Customization
 
-You can modify the `NetworkLogAnalyzer` class in `logex.py` to:
+You can modify the `NetworkLogAnalyzer` class in `log_analyzer.py` to:
 - **Change Log Path**: Update the `LOG_FILE` variable at the bottom of the script.
 - **Add Signatures**: Add new strings to `self.suspicious_keywords` list.
 - **Adjust Logic**: Modify `analyze_threats` to add more complex rules.
